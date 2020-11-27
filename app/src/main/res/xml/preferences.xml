@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <EditTextPreference
+        android:defaultValue="1"
+        android:key="@string/key_interval"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/capture_interval_summary"
+        android:title="@string/capture_interval"
+        android:visibility="visible" />
+    <ListPreference
+        android:defaultValue="14.5"
+        android:entries="@array/sensitivity_names_array"
+        android:entryValues="@array/sensitivity_values_array"
+        android:key="key_sensitivity"
+        android:summary="@string/capture_sensitivity_summary"
+        android:title="Set Sensitivity" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:enabled="false"
+        android:key="key_preview"
+        android:summary="Preview frames being sent to Monitor"
+        android:title="@string/check_preview" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="key_checkbox_email"
+        android:summary="Send 1 email when motion is detected"
+        android:title="Notify on Motion Detected" />
+    <EditTextPreference
+        android:defaultValue="Your email"
+        android:key="key_email_address"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Your eMail (must be GMail account)"
+        android:visibility="invisible" />
+    <EditTextPreference
+        android:defaultValue="Password"
+        android:key="key_email_PW"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:title="Password" />
+    <EditTextPreference
+        android:defaultValue="5"
+        android:key="key_email_number"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Number of video frames to send via email"
+        android:visibility="invisible" />
+    <!--    <Preference-->
+    <!--        android:id="@+id/id_div0"-->
+    <!--        app:allowDividerAbove="true"-->
+    <!--        app:allowDividerBelow="true"-->
+    <!--        tools:visibility="visible" />-->
+    <CheckBoxPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="false"
+        android:key="key_checkbox_alwaysnotify"
+        android:summary="Send rolling emails"
+        android:title="Notifcation option" />
+    <CheckBoxPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="false"
+        android:key="key_checkbox_alarm"
+        android:summary="Sound an alarm when motion detected"
+        android:title="Alarm" />
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="key_alarm"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary=""
+        android:title="Selected Alarm"
+        android:visibility="visible" />
+</PreferenceScreen>

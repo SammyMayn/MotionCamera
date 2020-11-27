@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PRO Motion Detector Camera</string>
+
+    <string name="capture_interval">Interval</string>
+    <string name="capture_interval_summary">Set Capture Frame Rate</string>
+    <string name="capture_sensitivity_summary">Select Motion Sensitivity - less is more sensitive</string>
+    <string name="check_preview">Preview Capture</string>
+    <string name="key_interval">Interval</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

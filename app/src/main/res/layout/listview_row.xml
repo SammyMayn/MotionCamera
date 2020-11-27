@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/labelSpacer"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="@+id/label"
+        android:textSize="20sp"></TextView>
+
+    <CheckBox
+        android:id="@+id/list_view_item_checkbox"
+        android:width="25dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/labelIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/label"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/labelIPDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/label"
+        android:textSize="20px"></TextView>
+
+</LinearLayout>
