@@ -21,19 +21,20 @@
         android:id="@+id/btnConnect"
         android:layout_width="299dp"
         android:layout_height="66dp"
-        android:background="@drawable/circlebutton"
+        android:background="@drawable/button"
         android:text="Re-Scan"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnSnapshot"
         android:layout_width="299dp"
         android:layout_height="66dp"
-
-        android:background="@drawable/circlebutton"
+        android:background="@drawable/button"
         android:onClick="takeSnapshot"
         android:text="Start"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textStyle="bold" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -56,46 +57,6 @@
         android:textColor="#00EFFF"
         android:textSize="32sp" />
 
-    <!--<LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="61dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/intervalLabel"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:text="Capture Interval (secs)" />
-
-        <EditText
-            android:id="@+id/editInterval"
-            android:layout_width="40dp"
-            android:layout_height="36dp"
-            android:layout_row="1"
-            android:layout_column="0"
-            android:autofillHints=""
-            android:background="#FFFFFF"
-            android:ems="10"
-            android:inputType="text"
-            android:text="1"
-            android:textAlignment="center" />
-    </LinearLayout>-->
-
-
-    <!-- <NumberPicker
-         android:id="@+id/numberPicker"
-         android:layout_width="wrap_content"
-         android:layout_height="400dp"
-         android:layout_marginBottom="8dp"
-         android:layout_marginEnd="8dp"
-         android:layout_marginStart="8dp"
-         android:layout_marginTop="8dp"
-         android:background="#FFF000"
-         android:theme="@style/NumberPickerText"
-         app:layout_constraintEnd_toEndOf="parent"
-         app:layout_constraintStart_toStartOf="parent"
-         app:layout_constraintTop_toBottomOf="@+id/textView" />-->
-
 
     <TextView
         android:id="@+id/editTextAddress"
@@ -109,12 +70,46 @@
         android:text="."
         android:textAlignment="center"
         android:textSize="16sp" />
+    <ImageView
+        android:id="@+id/imgButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/button" />
+    <ImageView
+        android:id="@+id/imgCloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/cloud5" />
 
-
+    <TextView
+        android:id="@+id/bubbleText"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_alignLeft="@+id/lvSources"
+        android:layout_alignTop="@+id/lvSources"
+        android:layout_alignRight="@+id/lvSources"
+        android:layout_alignBottom="@+id/lvSources"
+        android:autofillHints=""
+        android:background="@drawable/cloud5"
+        android:ems="33"
+        android:maxLines="3"
+        android:paddingTop="50pt"
+        android:singleLine="false"
+        android:text="TESTING"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:fontFamily="sans-serif-condensed"
+        android:visibility="gone" />
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="visible"
         app:srcCompat="@drawable/motion_detector_monitor_blue" />
 
 </LinearLayout>

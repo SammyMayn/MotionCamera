@@ -1,14 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    signingConfigs {
+        release {
+            storeFile file('/home/sy/Devt/android-studio/Android_Keystore/SJM_KeyStore.jks')
+            storePassword 'M1ll1e16'
+            keyAlias 'key0'
+            keyPassword 'M1ll1e16'
+        }
+    }
+    compileSdkVersion 30
     defaultConfig {
-        applicationId "com.sjm.camera"
-        minSdkVersion 24
-        targetSdkVersion 29
-        versionCode 20
-        versionName "20.0"
+        applicationId "com.sjm.cameranew"
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 33
+        versionName '33.0'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

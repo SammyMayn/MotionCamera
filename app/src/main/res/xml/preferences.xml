@@ -27,19 +27,22 @@
         android:title="@string/check_preview" />
 
     <CheckBoxPreference
-        android:defaultValue="false"
+        android:defaultValue="true"
+        android:enabled="false"
         android:key="key_checkbox_email"
         android:summary="Send 1 email when motion is detected"
         android:title="Notify on Motion Detected" />
     <EditTextPreference
         android:defaultValue="Your email"
+        android:enabled="false"
         android:key="key_email_address"
         android:selectAllOnFocus="true"
         android:singleLine="true"
-        android:title="Your eMail (must be GMail account)"
+        android:title="Your eMail"
         android:visibility="invisible" />
     <EditTextPreference
         android:defaultValue="Password"
+        android:enabled="false"
         android:key="key_email_PW"
         android:selectAllOnFocus="true"
         android:singleLine="true"
@@ -50,7 +53,7 @@
         android:key="key_email_number"
         android:selectAllOnFocus="true"
         android:singleLine="true"
-        android:title="Number of video frames to send via email"
+        android:title="Number of detections before warning alarm"
         android:visibility="invisible" />
     <!--    <Preference-->
     <!--        android:id="@+id/id_div0"-->
@@ -67,7 +70,7 @@
     <CheckBoxPreference
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:key="key_checkbox_alarm"
         android:summary="Sound an alarm when motion detected"
         android:title="Alarm" />
